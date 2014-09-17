@@ -1,6 +1,6 @@
 {
     "name": "dpNumberPicker",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "title": "DP Number Picker",
     "author": {
         "name": "Dustin Poissant",
@@ -24,9 +24,7 @@
         "dpUI",
         "dpNumberPicker"
     ],
-    "homepage": "https://rawgithub.com/dustinpoissant/jquery.dpNumberPicker/master/index.html",
-    "docs": "https://rawgithub.com/dustinpoissant/jquery.dpNumberPicker/master/index.html",
-    "demo": "https://rawgithub.com/dustinpoissant/jquery.dpNumberPicker/master/examples/index.html",
+    "homepage": "https://github.com/dustinpoissant/jquery.dpNumberPicker/master/",
     "downlaod": "https://github.com/dustinpoissant/jquery.dpNumberPicker/archive/master.zip",
     "bugs": "https://github.com/dustinpoissant/jquery.dpNumberPicker/issues",
     "maintainers": [

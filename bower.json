@@ -1,17 +1,16 @@
 {
-  "name": "dpNumberPicker",
+  "name": "dpUI Number Picker",
   "description": "A jQuery plugin that easily allows the user to select or enter a number.",
-  "version": "1.0.1",
-  "homepage": "https://rawgithub.com/dustinpoissant/jquery.dpNumberPicker/master/index.html",
+  "version": "2.0.0",
+  "homepage": "https://github.com/dustinpoissant/jquery.dpNumberPicker/master/",
   "author": {
     "name": "Dustin Poissant",
     "url": "https://github.com/dustinpoissant"
   },
   "main": [
-    "src/jquery.dpNumberPicker-1.0.1.js",
-    "src/jquery.dpNumberPicker-1.0.1.css",
-    "src/minified/jquery.dpNumberPicker-1.0.1-min.js",
-    "src/minified/jquery.dpNumberPicker-1.0.1-min.css"
+    "src/dpNumberPicker-2.x.js",
+    "src/dpNumberPicker-2.x.css",
+		"src/dpNumberPicker-2.x-skin-grey.css"
   ],
   "dependencies": {
     "jquery": "~2.1.0"

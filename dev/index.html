@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>dpUI Number Picker - jQuery Plugin - Dev Page</title>
+	<link rel='stylesheet' href='../src/dpNumberPicker-2.x.css' />
+	<link rel='stylesheet' href='../src/dpNumberPicker-2.x-skin.grey.css' />
+	<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+	<script src='../src/dpNumberPicker-2.x.js'></script>
+	<script>
+		$(document).ready(function(){
+			dpUI.numberPicker("#np", {
+				min: 0,
+				max: 10,
+				step: 0.25,
+				format: "#.##",
+				formatter: function(x){
+					return "$ "+x;
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id='np'></div>
+</body>
+</html>
