@@ -29,7 +29,7 @@ dpUI.numberPicker = function(selector, options){
 		formatter: function(x){return x;},
 		increaseText: "+",
 		decreaseText: "-",
-		
+
 		onReady: function(){},
 		onMin: function(){},
 		onMax: function(){},
@@ -51,7 +51,7 @@ dpUI.numberPicker = function(selector, options){
 		input.val(el.options.formatter(dpUI.helper.formatter(el.number, el.options.format)));
 		if(el.options.min!==false&&el.options.start==el.options.min)np.addClass("dpui-numberPicker-min");
 		if(el.options.max!==false&&el.options.start==el.options.max)np.addClass("dpui-numberPicker-max");
-		
+
 		function set(num){
 			num = dpUI.helper.betterParseFloat(num);
 			if(isNaN(num)) num = el.number;
@@ -60,9 +60,11 @@ dpUI.numberPicker = function(selector, options){
 			if(el.options.min!==false&&num<=el.options.min){
 				np.addClass("dpui-numberPicker-min");
 				el.number = el.options.min;
+				el.options.onMin.call(el,el,el.number);
 			} else if(el.options.max!==false&&num>=el.options.max){
 				np.addClass("dpui-numberPicker-max");
 				el.number = el.options.max;
+				el.options.onMax.call(el,el,el.number);
 			} else {
 				el.number = num;
 			}
@@ -87,6 +89,7 @@ dpUI.numberPicker = function(selector, options){
 		input.on("change", function(){
 			el.set(input.val());
 		});
+		el.options.onReady.call(el,el,el.number);
 	});
 };
 (function($){
